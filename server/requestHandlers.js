@@ -14,6 +14,19 @@ function init(response, postData) {
     });
 }
 
+function itinerary(response, postData) {
+    console.log("Rendering itinerary.html");
+    fs.readFile('client/itinerary.html', function(err, data) {
+        if (err) {
+            throw err;
+        }
+        var index = data;
+        response.writeHead(200, {"Content-Type": "text/html"});
+        response.write(index);
+        response.end();
+    });
+}
+
 function css(response, postData) {
     console.log("fetching onestop.css");
     fs.readFile('client/assets/css/onestop.css', function(err, data) {
@@ -66,6 +79,7 @@ function upload(response, postData) {
 }
 
 exports.init = init;
+exports.itinerary = itinerary;
 exports.css = css;
 exports.js = js;
 exports.upload = upload;

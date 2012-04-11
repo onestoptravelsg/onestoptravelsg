@@ -4,6 +4,7 @@ var requestHandlers = require("./requestHandlers");
 
 var handle = {}
 handle["/"] = requestHandlers.init;
+handle["/itinerary"] = requestHandlers.itinerary;
 handle["/assets/css/onestop.css"] = requestHandlers.css;
 handle["/assets/js/onestop.js"] = requestHandlers.js;
 handle["/upload"] = requestHandlers.upload;
