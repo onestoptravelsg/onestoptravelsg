@@ -1,97 +1,134 @@
-<html >
-    <head >
-    <title >Cloud9, NodeJS & Heroku: websockets for all</title>
-    
-    <script src="/socket.io/socket.io.js"></script>
-    
-    <script>
-    onerror = function (msg) {
-    log(msg);
-    }
-    function log(msg) {
-    document.getElementById('log').appendChild(document.createTextNode(new Date() + ' ' + msg + '\n'));
-    }
-    function status(msg) {
-    log(msg);
-    document.getElementById('status').textContent = msg;
-    }
-    function clearLog() {
-    var e = document.getElementById('log');
-    while (e.hasChildNodes()) {
-    e.removeChild(e.firstChild);
-    }
-    e.appendChild(document.createTextNode('Log: \n'));
-    }
-    </script >
-    
-    <script >
-    var socket = null;
-    function connect() {
-    log('Connecting to local server...');
-    if (socket == null) {
-    socket = io.connect(null,{'auto connect': false});
-    socket.on('connect', function () {
-    status('Connected');
-    });
-    
-    socket.on('message', function (data) {
-    log(data);
-    });
-    }
-    socket.socket.connect();
-    }
-    
-    function send() {
-    if (socket && socket.socket.connected) {
-    socket.send(document.getElementById('text').value);
-    log('>' + document.getElementById('text').value);
-    } else {
-    log('Not connected.');
-    }
-    }
-    
-    function send100() {
-    if (socket && socket.socket.connected) {
-    for (var i = 0; i < 100; i += 1) {
-    socket.send('test'+ i);
-    log('> test' + i);
-    }
-    } else {
-    log('Not connected.');
-    }
-    }
-    
-    function update() {
-    if (socket && socket.socket && socket.socket.transport) {
-    document.getElementById('sessionId').textContent = socket.socket.transport.sessid;
-    document.getElementById('transport').textContent = socket.socket.transport.name;
-    } else {
-    document.getElementById('sessionId').textContent = '-';
-    document.getElementById('transport').textContent = '-';
-    }
-    }
-    setInterval(update, 10);
-    
-    </script >
-    </head >
-    
-    <body  onload="connect()">
-    <p >
-    <label  style='width:200px;float:left'>Status: <span  id="status">Idle</span ></label >
-    </p >
-    <p >SessionId: <span  id="sessionId">-</span ></p >
-    <p >Transport: <span  id="transport">-</span ></p >
-    
-    <p >
-    <label >Message: <input  id="text" type="text" size="80" value=""/></label >
-    <input  type=button value="Echo" onclick="send()">
-    </p >
-    
-    <p >
-    <input  type=button value="Spam 100 packets" onclick="send100()" />
-    <input  type=button value="Clear log" onclick="clearLog()" />
-    </p >
-    
-    <pre  id="log">Log:</pre >
-    </body >
-</html >
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OneStopTravelSG - Your one stop itinerary planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your one stop itinerary planner.">
+    <meta name="author" content="OneStopTravelSG">
+
+    <!-- Stylesheets -->
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/onestop.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <!-- Icons -->
+    <!--<link rel="shortcut icon" href="assets/ico/favicon.ico">-->
+  </head>
+
+  <body id="onestopbody" data-spy="scroll" data-target=".subnav" data-offset="50">
+	<div class="icondiv">
+	  <a href="./index.html"><img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/ico/onestoptravelsg-icon.gif" height="292px" width="200px"></img></a>
+	</div>
+	<!-- Navbar -->
+    <div id="onestopnavbar" class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <!--<a class="brand" href="./index.html">Bootstrap</a>-->
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li class="">
+                <a href="./index.html"><i class="icon-home icon-white"></i> Home</a>
+              </li>
+              <li class="active">
+                <a href="./submitplace.html"><i class="icon-share icon-white"></i> Submit Place</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="">
+                <form class="navbar-search pull-left">
+				  <input type="text" class="search-query" placeholder="Search">
+				</form>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown" id="accountsmenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#accountsmenu">
+				  <i class="icon-user icon-white"></i> Accounts
+				  <b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a href="#">My Itinerary</a></li>
+				  <li><a href="#">Account Settings</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Sign In</a></li>
+				</ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div id="maincontent" class="container">
+	  <div class="row">
+		<h4 id="site-title"><a href="index.html">OneStopTravelSG</a></h4>
+	    <div class="hero-unit">
+		  <div class="marketing-main">
+		    <div id="marketing-content">
+		      <h1>Itinerary planning made simple...</h1>
+		      <p>Now you can focus on your destinations, and we will take care of the directions for you. Easily drag your destinations around to reorder your schedule, no need to worry about how to get there!</p>
+			  <a class="btn btn-primary btn-marketing" target="_blank" href="./itinerary.html">Try it now!</a>
+		    </div>
+		    <div id="marketing-img">
+		      <img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/itinerarymockup-map.png" width="300px"></img>
+		      <!--<img src="http://dl.dropbox.com/u/3953292/assets/img/itinerarymockup-map.png" height="292.5px" width="240px"></img>-->
+		    </div>
+		  </div>
+	    </div>
+	  </div>
+	  <div class="row marketing-columns">
+		<div class="span4 offset0 marketing-column">
+		  <h2>What is OneStopTravelSG?</h2>
+		  <p>OneStopTravelSG is a user-friendly itinerary planning app. Simply add your destinations and we will take care of the rest. You can even drag the items around to reorder them easily. No more hassles to delete and re-add the items!</p>
+		  <div class="marketing-foot">
+		  </div>
+		</div>
+	    <div class="span4 offset0 marketing-column">
+		  <h2>Why use OneStopTravelSG?</h2>
+		  <p>Use OneStopTravelSG for planning your long trip at an exciting desination. Too many places to go and don't know how to start linking them together? OneStopTravelSG helps you link all of them together and shows you how to get to these places!</p>
+		  <div class="marketing-foot">
+		  </div>
+		</div>
+		<div class="span4 offset0 marketing-column">
+		  <h2>Who should use OneStopTravelSG?</h2>
+		  <p>For all the travellers out there. Whether you are going to a near country-side area for a short weekend, or a faraway island paradise for a couple of weeks, OneStopTravelSG is your best itinerary planning app!</p>
+		  <div class="marketing-foot">
+		  </div>
+		</div>
+	  </div>
+	  <hr class="footer-div">
+	  <div class="row footer">
+	    <div class="span4">
+		  <h3>OneStopTravelSG</h3>
+		  <p>OneStopTravelSG is brought to you by a group of young and enthusiastics travellers like you! We hope you like our service. For feedback, feel free to email us at onestoptrave-sg@gmail.com</p>
+		</div>
+	    <div class="span2">
+		  <h3>About</h3>
+		  <ul>
+		    <li>Our Team</li>
+		    <li>What's Special?</li>
+		    <li>Money Matters</li>
+		    <li>Terms & Conditions</li>
+		  </ul>
+		</div>
+	    <div class="span3">
+		  <h3>Get Social</h3>
+		  <ul>
+		    <li>Like us on Facebook!</li>
+		    <li>Follow us on Twitter!</li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+	<!-- Javascripts -->
+	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+	<script type="text/javascript" src="/assets/js/onestop.js"></script>
+  </body>
+</html>

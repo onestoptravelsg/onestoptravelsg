@@ -1,26 +1,28 @@
-var app = require('http').createServer(handler)
-            , io = require('socket.io').listen(app)
-            , fs = require('fs')
+var http = require("http");
+var url = require("url");
 
-app.listen(process.env.PORT || 8001);
+function start(route, handle) {
+  function onRequest(request, response) {
+    var postData = "";
+    var pathname = url.parse(request.url).pathname;
+    console.log("Request for " + pathname + " received.");
 
-function handler (req, res) {
-    fs.readFile('client/index.html',
-    function (err, data) {
-        if (err) {
-        res.writeHead(500);
-        return res.end('Error loading index.html');
-        }
-    
-        res.writeHead(200, {'Content-Type': 'text/html', "Content-Length": data.length});
-        res.end(data);
+    request.setEncoding("utf8");
+
+    request.addListener("data", function(postDataChunk) {
+      postData += postDataChunk;
+      console.log("Received POST data chunk '"+
+      postDataChunk + "'.");
     });
+
+    request.addListener("end", function() {
+      route(handle, pathname, response, postData);
+    });
+
+  }
+
+  http.createServer(onRequest).listen(process.env.PORT);
+  console.log("Server has started.");
 }
 
-io.sockets.on('connection', function (socket) {
-// echo the message
-    socket.on('message', function (data) {
-    console.info(data);
-    socket.send("[ECHO] "+data);
-    });
-});
+exports.start = start;
