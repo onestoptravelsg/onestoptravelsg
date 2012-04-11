@@ -45,13 +45,34 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-#onestopnavbar.nav > li {
-  color: #7cb5eb;
+#onestopnavbar.navbar .nav li > a {
+  color: #aad4c8;
+}
+#onestopnavbar.navbar .nav li > a:hover {
+  color: #0d89a8;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #7cb5eb;
+}
+#onestopnavbar.navbar .divider-vertical {
+  background-color: #4c5a5c;
+  border-right: 1px solid #4c5a5c;
+}
+.dropdown-menu {
+  background-color: #4c5a5c;
+}
+.dropdown-menu .divider {
+  background-color: #4c5a5c;
+  border-bottom: 1px solid #4c5a5c;
+}
+.dropdown-menu a {
+  color: #aad4c8;
+  text-decoration: none;
+  background-color: #697e81;  
 }
 .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
-  color: #ffffff;
+  color: #aad4c8;
   text-decoration: none;
-  background-color: #484848;
+  background-color: #697e81;
 }
 .marketing-main {
   display: table;
