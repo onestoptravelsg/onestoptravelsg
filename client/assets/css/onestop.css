@@ -1,7 +1,7 @@
 body {
   background-color: #d4eee5;
   /*font-family: 'Oxygen', sans-serif;*/
-  font-family: Arial;
+  font-family: 'Ubuntu', sans-serif;
 }
 .offset0 {
   margin-left: 10px;
@@ -70,7 +70,8 @@ body {
   background-color: #697e81;
 }
 #maincontent.container .hero-unit {
-  background-color: #aad4c8;
+  /*background-color: #aad4c8;*/
+  background-color: #e2f1f1;
 }
 .marketing-main {
   display: table;
