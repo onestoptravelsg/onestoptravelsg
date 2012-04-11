@@ -20,9 +20,6 @@ body {
 #site-title a:hover {
   text-decoration: none;
 }
-#topnavbar.navbar-inner {
-  background-color: #697e81;
-}
 #maincontent.container {
   margin-top: 100px;
 }
@@ -47,6 +44,9 @@ body {
   color: #ffffff;
   text-decoration: none;
   background-color: #484848;
+}
+#onestopnavbar.navbar-inner {
+  background-color: #697e81;
 }
 .marketing-main {
   display: table;
