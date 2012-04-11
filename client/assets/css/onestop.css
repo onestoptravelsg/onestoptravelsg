@@ -12,16 +12,13 @@ body {
   text-align: center;
 }
 #site-title a {
-  color: #0099ff;
+  color: #48CCCD;
   font-size:80px;
   line-height:1.6em;
-  text-shadow: -1px -1px 0 #0000ff;
+  text-shadow: -1px -1px 0 #40E0D0;
 }
 #site-title a:hover {
   text-decoration: none;
-}
-#topnavbar {
-  background-color: #697e81;
 }
 #maincontent.container {
   margin-top: 100px;
@@ -42,6 +39,9 @@ body {
 }
 #onestopnavbar.navbar .dropdown-menu a {
   color: #333333;
+}
+#onestopnavbar.navbar-inner {
+  background-color: #697e81;
 }
 .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
   color: #ffffff;
