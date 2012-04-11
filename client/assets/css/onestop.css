@@ -1,6 +1,7 @@
 body {
   background-color: #d4eee5;
-  font-family: 'Oxygen', sans-serif;
+  /*font-family: 'Oxygen', sans-serif;*/
+  font-family: Arial;
 }
 .offset0 {
   margin-left: 10px;
@@ -68,6 +69,9 @@ body {
   text-decoration: none;
   background-color: #697e81;
 }
+#maincontent.container .hero-unit {
+  background-color: #aad4c8;
+}
 .marketing-main {
   display: table;
 }
@@ -96,7 +100,8 @@ div.marketing-column {
   padding-bottom: 10px;
 }
 .marketing-columns p {
-  font-family: 'Oxygen', sans-serif;
+  /*font-family: 'Oxygen', sans-serif;*/
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
 }
 .marketing-columns h2 {
