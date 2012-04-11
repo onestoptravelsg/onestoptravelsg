@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>OneStopTravelSG - Your one stop itinerary planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your one stop itinerary planner.">
+    <meta name="author" content="OneStopTravelSG">
+
+    <!-- Stylesheets -->
+    <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/onestop.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <!-- Icons -->
+    <!--<link rel="shortcut icon" href="assets/ico/favicon.ico">-->
+  </head>
+
+  <body id="onestopbody" data-spy="scroll" data-target=".subnav" data-offset="50">
+	<div class="icondiv">
+	  <a href="index.html"><img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/ico/onestoptravelsg-icon.gif" height="292px" width="200px"></img></a>
+	</div>
+	<!-- Navbar -->
+    <div id="onestopnavbar" class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <!--<a class="brand" href="./index.html">Bootstrap</a>-->
+          <div class="nav-collapse">
+            <ul class="nav pull-right">
+              <li class="">
+                <a href="./index.html"><i class="icon-home icon-white"></i> Home</a>
+              </li>
+              <li class="active">
+                <a href="./submitplace.html"><i class="icon-share icon-white"></i> Submit Place</a>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="">
+                <form class="navbar-search pull-left">
+				  <input type="text" class="search-query" placeholder="Search">
+				</form>
+              </li>
+              <li class="divider-vertical"></li>
+              <li class="dropdown" id="accountsmenu">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#accountsmenu">
+				  <i class="icon-user icon-white"></i> Accounts
+				  <b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+				  <li><a href="#">My Itinerary</a></li>
+				  <li><a href="#">Account Settings</a></li>
+				  <li class="divider"></li>
+				  <li><a href="#">Sign In</a></li>
+				</ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div id="maincontent" class="container">
+	  <div class="row">
+	    <div id="list">
+		  <div id="e1" style="height:100px;background-color:Blue;" class="list">Aenean eros arcu, condimentum nec, dapibus ut, tincidunt sit amet, urna. Quisque viverra, eros sed imperdiet iaculis, est risus facilisis quam, id malesuada arcu nulla luctus urna. Nullam et est. Vestibulum velit sem, faucibus cursus, dapibus vestibulum, pellentesque et, urna. Donec luctus. Donec lectus.</div>
+		  <div id="e2" style="height:100px;background-color:Green;" class="list">Aliquam eget eros facilisis tortor feugiat sollicitudin. Integer lobortis vulputate sapien. Sed iaculis erat ac nunc. Etiam eu enim. Mauris ipsum urna, rhoncus at, bibendum sit amet, euismod eget, dolor. Mauris fermentum quam vitae ligula.</div>
+		  <div id="e3" style="height:100px;background-color:Yellow;" class="list">Vestibulum in libero feugiat justo dictum consectetuer. Vestibulum euismod purus eget elit. Nunc sed massa porta elit bibendum posuere. Nunc pulvinar justo sit amet odio. In sed est. Phasellus ornare elementum nulla.</div>
+		  <div id="e4" style="height:100px;background-color:Fuchsia" class="list">Nulla ipsum neque, cursus a, viverra a, imperdiet at, enim. Quisque facilisis, diam sed accumsan suscipit, odio arcu hendrerit dolor, quis aliquet massa nulla nec sem.</div>
+		</div>
+	  </div>
+	  <hr class="footer-div">
+	  <div class="row footer">
+	    <div class="span4">
+		  <h3>OneStopTravelSG</h3>
+		  <p>OneStopTravelSG is brought to you by a group of young and enthusiastics travellers like you! We hope you like our service. For feedback, feel free to email us at onestoptrave-sg@gmail.com</p>
+		</div>
+	    <div class="span2">
+		  <h3>About</h3>
+		  <ul>
+		    <li>Our Team</li>
+		    <li>What's Special?</li>
+		    <li>Money Matters</li>
+		    <li>Terms & Conditions</li>
+		  </ul>
+		</div>
+	    <div class="span3">
+		  <h3>Get Social</h3>
+		  <ul>
+		    <li>Like us on Facebook!</li>
+		    <li>Follow us on Twitter!</li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+	<!-- Javascripts -->
+	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+	<script type="text/javascript" src="assets/js/onestop.js"></script>
+  </body>
+</html>
