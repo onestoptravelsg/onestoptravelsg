@@ -20,7 +20,7 @@ body {
 #site-title a:hover {
   text-decoration: none;
 }
-#topnavbar.navbar-inner {
+#topnavbar {
   background-color: #697e81;
 }
 #maincontent.container {
