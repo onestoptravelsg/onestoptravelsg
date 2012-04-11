@@ -1,0 +1,147 @@
+body {
+  background-color: #a0a0a0;
+  font-family: 'Oxygen', sans-serif;
+}
+.offset0 {
+  margin-left: 10px;
+}
+#site-title {
+  font-family: 'Lobster', Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  margin: 60px auto 0; 
+  text-align: center;
+}
+#site-title a {
+  color: #0099ff;
+  font-size:80px;
+  line-height:1.6em;
+  text-shadow: -1px -1px 0 #0000ff;
+}
+#site-title a:hover {
+  text-decoration: none;
+}
+#maincontent.container {
+  margin-top: 100px;
+}
+.icondiv {
+  position: absolute;
+  top: 0;
+  left: 100px;
+  z-index: 2000;
+}
+#onestopnavbar {
+  position: relative;
+  top: 60px;
+  right: 0;
+}
+#onestopnavbar.navbar .dropdown-menu {
+  background-color: #909090;
+}
+#onestopnavbar.navbar .dropdown-menu a {
+  color: #333333;
+}
+.dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #484848;
+}
+.marketing-main {
+  display: table;
+}
+.marketing-main h1 {
+  color: #333333;
+  font-family: 'Oleo Script', cursive;
+  font-size: 35px;
+}
+div.marketing-column {
+  background: url('http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/marketingbg.png');
+  background-repeat: no-repeat;
+  padding: 5px 5px 5px 5px;
+}
+.marketing-column p {
+  padding: 5px 5px 5px 5px;
+}
+.marketing-head {
+  height: 80px;
+}
+.marketing-foot {
+  height: 80px;
+}
+.marketing-columns {
+  margin-top: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.marketing-columns p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+}
+.marketing-columns h2 {
+  font-family: 'Oleo Script', cursive;
+  color: #282828;
+  width: 80%;
+  padding-left: 5px;
+}
+#marketing-content {
+  float: left;
+  display: table-cell;
+  width: 500px;
+}
+#marketing-content p {
+  color: #333333;
+}
+#marketing-img {
+  float: right;
+  display: table-cell;
+  width: 300px;
+  padding-left: 20px;
+}
+.btn-marketing {
+  padding: 20px 30px;
+  font-size: 25px;
+  font-family: 'Oleo Script', cursive;
+}
+.footer-div {
+  margin-top: 150px;
+}
+.footer {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.footer h3 {
+  font-family: 'Oleo Script', cursive;
+  color: #b8b8b8;
+}
+.footer p {
+  color: #d8d8d8;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14px;
+}
+.footer ul {
+  list-style-type: none;
+  color: #d8d8d8;
+}
+
+.drag, .list
+{
+  width: 450px;
+}
+
+.drag
+{
+  z-index: 100;
+  position:absolute;
+  opacity: .50;
+  filter: alpha(opacity=50);
+}
+
+.list
+{
+  position:relative;
+  z-index: 1;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  top: 0px;
+  left: 0px;
+  border: 1px solid #000000;
+}
