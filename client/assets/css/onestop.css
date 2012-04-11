@@ -20,6 +20,9 @@ body {
 #site-title a:hover {
   text-decoration: none;
 }
+#topnavbar.navbar-inner {
+  background-color: #697e81;
+}
 #maincontent.container {
   margin-top: 100px;
 }
