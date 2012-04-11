@@ -307,7 +307,7 @@ function itemMoved(newPos, element, eventObj)
   {
     if(List.childNodes[i].className == "list")
     {
-	    temp = parseInt(List.childNodes[i].style.height);
+        temp = parseInt(List.childNodes[i].style.height);
 	    if(temp/2 >= yPos)
 	    {
 		    bestItem = List.childNodes[i];
