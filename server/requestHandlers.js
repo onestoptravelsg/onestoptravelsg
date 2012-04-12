@@ -72,7 +72,7 @@ function stream(response, postData) {
     
     t.stream(
         'statuses/filter',
-        { track: ['awesome', 'cool', 'rad', 'gnarly', 'groovy'] },
+        { track: ['black', 'friday'] },
         function(stream) {
             stream.on('data', tweet);
             setTimeout(function responsetoclient() {
