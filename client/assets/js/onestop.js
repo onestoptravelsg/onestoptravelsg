@@ -7,7 +7,7 @@ function init() {
                 cache: false,
                 timeout: 5000,
                 success: function() {
-                    alert('Welcome!');
+                    //alert('Welcome!');
                 }
         })
         .done(function(html) {
@@ -27,7 +27,7 @@ function attachitinerarybtn() {
                     cache: false,
                     timeout: 5000,
                     success: function() {
-                            alert("Thank you for trying out!");
+                            //alert("Thank you for trying out!");
                     }
             })
             .done(function(html) {
@@ -45,7 +45,7 @@ function attachsubmitplacebtn() {
                     cache: false,
                     timeout: 5000,
                     success: function() {
-                            alert("Thank you for submitting a place!");
+                            //alert("Thank you for submitting a place!");
                     }
             })
             .done(function(html) {
