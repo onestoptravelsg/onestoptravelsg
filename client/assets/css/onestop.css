@@ -27,6 +27,9 @@ body {
 #site-title a:hover {
   text-decoration: none;
 }
+.header-div {
+  margin-top: 20px;
+}
 #maincontent.container {
   margin-top: 100px;
 }
@@ -99,25 +102,16 @@ body {
   text-decoration: none;
   background-color: #FF7B46;
 }
-#maincontent.container .hero-unit {
-  /*background-color: #aad4c8;*/
-  background-color: #FFA346;
-}
-#maincontent.container .hero-unit h1 {
+.marketing-main h1 {
   color: #714c32;
+  font-family: 'Oleo Script', cursive;
+  font-size: 35px;
 }
-#maincontent.container .hero-unit p {
+.marketing-main p {
   font-family: 'Ubuntu', sans-serif;
   /*color: #009494;*/
   color: #4f0000b;
-}
-.marketing-main {
-  display: table;
-}
-.marketing-main h1 {
-  color: #333333;
-  font-family: 'Oleo Script', cursive;
-  font-size: 35px;
+  font-size: 18px;
 }
 div.marketing-column {
   background: url('http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/marketingbg.png');
@@ -151,20 +145,6 @@ div.marketing-column {
   color: #f36c32;
   width: 80%;
   padding-left: 5px;
-}
-#marketing-content {
-  float: left;
-  display: table-cell;
-  width: 500px;
-}
-#marketing-content p {
-  color: #333333;
-}
-#marketing-img {
-  float: right;
-  display: table-cell;
-  width: 300px;
-  padding-left: 20px;
 }
 .btn-marketing {
   padding: 20px 30px;

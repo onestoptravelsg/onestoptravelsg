@@ -1,20 +1,59 @@
 <div class="row">
     <h4 id="site-title"><a id="sitetitlebtn" href="/index">OneStopTravelSG</a></h4>
-    <div class="hero-unit">
+    <hr class="header-div">
+    <div class="span5 offset0">
         <div class="marketing-main">
-            <div id="marketing-content">
-                <h1>Itinerary planning made simple...</h1>
-                <p>Now you can focus on your destinations, and we will take care of the directions for you. Easily drag your destinations around to reorder your schedule, no need to worry about how to get there!</p>
-                <a id="itinerarybtn" class="btn btn-primary btn-marketing">Try it now!</a>
+            <h1>Itinerary planning made simple...</h1>
+            <p>Now you can focus on your destinations, and we will take care of the directions for you. Easily drag your destinations around to reorder your schedule, no need to worry about how to get there!</p>
+            <a id="itinerarybtn" class="btn btn-primary btn-marketing">Try it now!</a>
+        </div>
+    </div>
+    <div class="span7">
+        <div id="marketing-carousel" class="carousel">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/carousel/00.png" width="540px" height="405px" alt="">
+                	<div class="carousel-caption">
+    					<h4>No account needed to create!</h4>
+    					<p>To start creating your itinerary, there is no need to create an account! Simply go to the itinerary creation page, enter your destinations, and you can choose to have us email 
+                        a PDF copy to you or download the itinerary directly from our site.
+                        </p>
+    				</div>
+                </div>
+                <div class="item">
+                    <img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/carousel/01.jpg" width="540px" height="405px" alt="">
+            		<div class="carousel-caption">
+    					<h4>Give us your destinations, we map them out for you!</h4>
+    					<p>Save yourself the hassle to find your destionation locations and link them up, we will take care of that for you! In just few simple steps, you will 
+                        have all the directions in one single document!</p>
+    				</div>
+                </div>
+                <div class="item">
+                    <img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/carousel/02.jpg" width="540px" height="405px" alt="">
+        			<div class="carousel-caption">
+    					<h4>Drag and drop to re-order your destinations!</h4>
+    					<p>Planned all your destinations out but need to change the order of a few of them? No need to worry. Simply drag and drop the destinations around 
+                        to re-order them, and the directions will be automatically updated for you!</p>
+    				</div>
+                </div>
+                <div class="item">
+                    <img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/carousel/03.jpg" width="540px" height="405px" alt="">
+        			<div class="carousel-caption">
+    					<h4>Collaborate with your travel buddies!</h4>
+    					<p>Need more help from your travel buddies to line up all your destinations? Simply share with them your itinerary link and you can all work on the 
+                        same plan together! Sign-in required.</p>
+    				</div>
+                </div>
             </div>
-            <div id="marketing-img">
-                <!--<img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/itinerarymockup-map.png" width="300px"></img>
-                <img src="http://dl.dropbox.com/u/3953292/assets/img/itinerarymockup-map.png" height="292.5px" width="240px"></img>-->
-            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#marketing-carousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#marketing-carousel" data-slide="next">&rsaquo;</a>
         </div>
     </div>
 </div>
 <div class="row marketing-columns">
+    <hr class="header-div">
     <div class="span4 offset0 marketing-column">
         <h2>What is OneStopTravelSG?</h2>
         <p>OneStopTravelSG is a user-friendly itinerary planning app. Simply add your destinations and we will take care of the rest. You can even drag the items around to reorder them easily. No more hassles to delete and re-add the items!</p>
@@ -31,6 +70,18 @@
         <h2>Who should use OneStopTravelSG?</h2>
         <p>For all the travellers out there. Whether you are going to a near country-side area for a short weekend, or a faraway island paradise for a couple of weeks, OneStopTravelSG is your best itinerary planning app!</p>
         <div class="marketing-foot">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <hr class="header-div">
+    <div class="span7 offset0">
+        <img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/carousel/04.jpg" width="480px" height="380px"/>
+    </div>
+    <div class="span5">
+        <div class="marketing-main">
+            <h1>See our simple tutorial...</h1>
+            <p>Not sure how to get started? Watch our tutorial video for inspiration!</p>
         </div>
     </div>
 </div>

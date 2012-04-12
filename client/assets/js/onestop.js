@@ -16,6 +16,7 @@ function init() {
             //attachsitetitlebtn();
             attachitinerarybtn();
             attachsubmitplacebtn();
+            startcarousel();
         });
         
     });
@@ -56,6 +57,10 @@ function attachsitetitlebtn() {
                 $('.dropdown-toggle').dropdown();
             });
     });
+}
+
+function startcarousel() {
+    $('#marketing-carousel').carousel();
 }
 
 function attachitinerarybtn() {
