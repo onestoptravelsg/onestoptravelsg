@@ -1,6 +1,8 @@
 body {
-  background-color: #d4eee5;
+  /*background-color: #d4eee5;*/
   /*font-family: 'Oxygen', sans-serif;*/
+  /*background-color: #c5f0e6;*/
+  background-color: #f8f8f8;
   font-family: 'Ubuntu', sans-serif;
 }
 .offset0 {
@@ -14,7 +16,8 @@ body {
 }
 #site-title a {
   /*color: #3B9C9C;*/
-  color: #2d7a7a;
+  /*color: #2d7a7a;*/
+  color: #006666;
   font-size:80px;
   line-height:1.6em;
   /*text-shadow: -1px -1px 0 #40E0D0;*/
@@ -37,17 +40,22 @@ body {
   right: 0;
 }
 #onestopnavbarinner {
-  background-color: #697e81;
+  /*background-color: #697e81;*/
+  background-color: #797d88;
   padding-left: 20px;
   padding-right: 20px;
 }
 #onestopnavbar.navbar .nav li > a {
-  color: #aad4c8;
+  /*color: #aad4c8;*/
+  color: #000000;
+  background-color: #797d88;
 }
 #onestopnavbar.navbar .nav li > a:hover {
-  color: #0d89a8;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #7cb5eb;
+  /*color: #0d89a8;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);*/
+  /*background-color: #7cb5eb;*/
+  background-color: #ccd1cd;
+  color: #ffffff;
   cursor: pointer;
 }
 #onestopnavbar.navbar .divider-vertical {
@@ -73,7 +81,7 @@ body {
 }
 #maincontent.container .hero-unit {
   /*background-color: #aad4c8;*/
-  background-color: #e2f1f1;
+  background-color: #c5f0e6;
 }
 .marketing-main {
   display: table;
