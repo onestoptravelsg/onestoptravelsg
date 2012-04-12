@@ -1,5 +1,5 @@
 <div class="row">
-    <h4 id="site-title"><a href="index.html">OneStopTravelSG</a></h4>
+    <h4 id="site-title"><a id="sitetitlebtn" href="/index">OneStopTravelSG</a></h4>
     <div class="hero-unit">
         <div class="marketing-main">
             <div id="marketing-content">
@@ -8,8 +8,8 @@
                 <a id="itinerarybtn" class="btn btn-primary btn-marketing">Try it now!</a>
             </div>
             <div id="marketing-img">
-                <img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/itinerarymockup-map.png" width="300px"></img>
-                <!--<img src="http://dl.dropbox.com/u/3953292/assets/img/itinerarymockup-map.png" height="292.5px" width="240px"></img>-->
+                <!--<img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/itinerarymockup-map.png" width="300px"></img>
+                <img src="http://dl.dropbox.com/u/3953292/assets/img/itinerarymockup-map.png" height="292.5px" width="240px"></img>-->
             </div>
         </div>
     </div>

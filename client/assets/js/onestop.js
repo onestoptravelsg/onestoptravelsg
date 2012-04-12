@@ -12,12 +12,50 @@ function init() {
         })
         .done(function(html) {
             $('#maincontent').append(html);
+            //attachlogolinkbtn();
+            //attachsitetitlebtn();
             attachitinerarybtn();
             attachsubmitplacebtn();
         });
         
     });
 	$('.dropdown-toggle').dropdown();
+}
+
+function attachlogolinkbtn() {
+    $("#logobtn").click(function(){
+            $.ajax({
+                    url: '/main',
+                    cache: false,
+                    timeout: 5000,
+                    success: function() {
+                            //alert("Thank you for trying out!");
+                    }
+            })
+            .done(function(html) {
+                $('#maincontent').empty().append(html);
+                load();
+                $('.dropdown-toggle').dropdown();
+            });
+    });
+}
+
+function attachsitetitlebtn() {
+    $("#sitetitlebtn").click(function(){
+            $.ajax({
+                    url: '/main',
+                    cache: false,
+                    timeout: 5000,
+                    success: function() {
+                            //alert("Thank you for trying out!");
+                    }
+            })
+            .done(function(html) {
+                $('#maincontent').empty().append(html);
+                load();
+                $('.dropdown-toggle').dropdown();
+            });
+    });
 }
 
 function attachitinerarybtn() {

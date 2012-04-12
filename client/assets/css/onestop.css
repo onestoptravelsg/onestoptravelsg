@@ -32,21 +32,21 @@ body {
 }
 .icondiv {
   position: absolute;
-  top: 0;
-  left: 100px;
+  top: 30px;
+  left: 50px;
   z-index: 2000;
 }
 #onestopnavbar {
   position: relative;
-  top: 60px;
+  top: 80px;
   right: 0;
 }
 #onestopnavbarinner {
   /*background-color: #697e81;
-  background-color: #797d88;*/
-  background-color: #FFA346;
-  padding-left: 20px;
-  padding-right: 20px;
+  background-color: #797d88;
+  background-color: #FFA346;*/
+  /*padding-left: 20px;
+  padding-right: 20px;*/
 }
 #onestopnavbarsearch.navbar-search .search-query {
   color: #ffffff;
@@ -65,7 +65,7 @@ body {
 #onestopnavbar.navbar .nav li > a {
   /*color: #aad4c8;*/
   color: #000000;
-  background-color: #FFA346;
+  /*background-color: #FFA346;*/
 }
 #onestopnavbar.navbar .nav li > a:hover {
   /*color: #0d89a8;
@@ -80,12 +80,12 @@ body {
   border-right: 1px solid #FF7B46;
 }
 #onestopnavbar.navbar .dropdown-menu {
-  background-color: #FFA346;
+  /*background-color: #FFA346;*/
 }
 #onestopnavbar.navbar .dropdown-menu a {
   color: #aad4c8;
   text-decoration: none;
-  background-color: #FFA346;  
+  /*background-color: #FFA346;*/
 }
 .dropdown-menu .divider {
   background-color: #FF7B46;
