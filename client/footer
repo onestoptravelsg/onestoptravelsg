@@ -1,0 +1,31 @@
+<div id="footer" class="container">
+      <hr class="footer-div">
+	  <div class="row footer">
+	    <div class="span4">
+		  <h3>OneStopTravelSG</h3>
+		  <p>OneStopTravelSG is brought to you by a group of young and enthusiastics travellers like you! We hope you like our service. For feedback, feel free to email us at onestoptrave-sg@gmail.com</p>
+		</div>
+	    <div class="span2">
+		  <h3>About</h3>
+		  <ul>
+		    <li>Our Team</li>
+		    <li>What's Special?</li>
+		    <li>Money Matters</li>
+		    <li>Terms & Conditions</li>
+		  </ul>
+		</div>
+	    <div class="span3">
+		  <h3>Get Social</h3>
+		  <ul>
+		    <li>Like us on Facebook!</li>
+		    <li>Follow us on Twitter!</li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+	<!-- Javascripts -->
+	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
+	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
+	<script type="text/javascript" src="/assets/js/onestop.js"></script>
+  </body>
+</html>

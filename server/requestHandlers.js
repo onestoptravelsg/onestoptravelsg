@@ -1,5 +1,8 @@
 var querystring = require("querystring");
 var fs = require('fs');
+var header;
+var footer;
+var content;
 
 function init(response, postData) {
     console.log("Rendering index.html");
@@ -7,22 +10,77 @@ function init(response, postData) {
         if (err) {
             throw err;
         }
-        var index = data;
+        content = data;
         response.writeHead(200, {"Content-Type": "text/html"});
-        response.write(index);
+        //response.write(header);
+        response.write(content);
+        //response.write(footer);
+        response.end();
+    });
+    /*fs.readFile('client/header', function(err, data) {
+        if (err) {
+            throw err;
+        }
+        header = data;
+    });
+    fs.readFile('client/footer', function(err, data) {
+        if (err) {
+            throw err;
+        }
+        footer = data;
+    });
+    fs.readFile('client/main', function(err, data) {
+        if (err) {
+            throw err;
+        }
+        content = data;
+        response.writeHead(200, {"Content-Type": "text/html"});
+        response.write(header);
+        response.write(content);
+        response.write(footer);
+        response.end();
+    });*/
+}
+
+function main(response, postData) {
+    console.log("Rendering main.html");
+    fs.readFile('client/main', function(err, data) {
+        if (err) {
+            throw err;
+        }
+        content = data;
+        response.writeHead(200, {"Content-Type": "text/html"});
+        response.write(content);
         response.end();
     });
 }
 
 function itinerary(response, postData) {
     console.log("Rendering itinerary.html");
-    fs.readFile('client/itinerary.html', function(err, data) {
+    fs.readFile('client/itinerary', function(err, data) {
         if (err) {
             throw err;
         }
-        var index = data;
+        content = data;
         response.writeHead(200, {"Content-Type": "text/html"});
-        response.write(index);
+        //response.write(header);
+        response.write(content);
+        //response.write(footer);
+        response.end();
+    });
+}
+
+function submitplace(response, postData) {
+    console.log("Rendering submiplace.html");
+    fs.readFile('client/submitplace', function(err, data) {
+        if (err) {
+            throw err;
+        }
+        content = data;
+        response.writeHead(200, {"Content-Type": "text/html"});
+        //response.write(header);
+        response.write(content);
+        //response.write(footer);
         response.end();
     });
 }
@@ -79,7 +137,9 @@ function upload(response, postData) {
 }
 
 exports.init = init;
+exports.main = main;
 exports.itinerary = itinerary;
+exports.submitplace = submitplace;
 exports.css = css;
 exports.js = js;
 exports.upload = upload;

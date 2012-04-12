@@ -48,6 +48,7 @@ body {
   color: #0d89a8;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   background-color: #7cb5eb;
+  cursor: pointer;
 }
 #onestopnavbar.navbar .divider-vertical {
   background-color: #4c5a5c;

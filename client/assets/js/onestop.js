@@ -1,8 +1,59 @@
 window.onload = init;
 
 function init() {
-    load();
+    $(document).ready(function(){
+        $.ajax({
+                url: '/main',
+                cache: false,
+                timeout: 5000,
+                success: function() {
+                    alert('Welcome!');
+                }
+        })
+        .done(function(html) {
+            $('#maincontent').append(html);
+            attachitinerarybtn();
+            attachsubmitplacebtn();
+        });
+        
+    });
 	$('.dropdown-toggle').dropdown();
+}
+
+function attachitinerarybtn() {
+    $("#itinerarybtn").click(function(){
+            $.ajax({
+                    url: '/itinerary',
+                    cache: false,
+                    timeout: 5000,
+                    success: function() {
+                            alert("Thank you for trying out!");
+                    }
+            })
+            .done(function(html) {
+                $('#maincontent').empty().append(html);
+                load();
+                $('.dropdown-toggle').dropdown();
+            });
+    });
+}
+
+function attachsubmitplacebtn() {
+    $("#submitplacebtn").click(function(){
+            $.ajax({
+                    url: '/submitplace',
+                    cache: false,
+                    timeout: 5000,
+                    success: function() {
+                            alert("Thank you for submitting a place!");
+                    }
+            })
+            .done(function(html) {
+                $('#maincontent').empty().append(html);
+                load();
+                $('.dropdown-toggle').dropdown();
+            });
+    });
 }
 
 ///SOTC Drag And Drop Lists

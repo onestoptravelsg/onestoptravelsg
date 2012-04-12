@@ -12,7 +12,7 @@
     <link href="/assets/css/onestop.css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
@@ -40,7 +40,7 @@
                 <a href="/index"><i class="icon-home icon-white"></i> Home</a>
               </li>
               <li class="">
-                <a id="submitplacebtn"><i class="icon-share icon-white"></i> Submit Place</a>
+                <a href="/submitplace"><i class="icon-share icon-white"></i> Submit Place</a>
               </li>
               <li class="divider-vertical"></li>
               <li class="">
@@ -66,36 +66,3 @@
         </div>
       </div>
     </div>
-	<div id="maincontent" class="container">
-    </div>
-    <div id="footer" class="container">
-	  <hr class="footer-div">
-	  <div class="row footer">
-	    <div class="span4">
-		  <h3>OneStopTravelSG</h3>
-		  <p>OneStopTravelSG is brought to you by a group of young and enthusiastics travellers like you! We hope you like our service. For feedback, feel free to email us at onestoptrave-sg@gmail.com</p>
-		</div>
-	    <div class="span2">
-		  <h3>About</h3>
-		  <ul>
-		    <li>Our Team</li>
-		    <li>What's Special?</li>
-		    <li>Money Matters</li>
-		    <li>Terms & Conditions</li>
-		  </ul>
-		</div>
-	    <div class="span3">
-		  <h3>Get Social</h3>
-		  <ul>
-		    <li>Like us on Facebook!</li>
-		    <li>Follow us on Twitter!</li>
-		  </ul>
-		</div>
-	  </div>
-	</div>
-	<!-- Javascripts -->
-	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-	<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-transition.js"></script>
-	<script type="text/javascript" src="/assets/js/onestop.js"></script>
-  </body>
-</html>
