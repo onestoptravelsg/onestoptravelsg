@@ -105,7 +105,8 @@ body {
 }
 #maincontent.container .hero-unit p {
   font-family: 'Ubuntu', sans-serif;
-  color: #009494;
+  /*color: #009494;*/
+  color: #4f0000b;
 }
 .marketing-main {
   display: table;
