@@ -1,5 +1,9 @@
 var querystring = require("querystring");
 var fs = require('fs');
+var path = require("path");
+var sys = require("sys");
+var events = require("events");
+var http = require("http");
 var header;
 var footer;
 var content;
@@ -40,6 +44,44 @@ function init(response, postData) {
         response.write(footer);
         response.end();
     });*/
+}
+
+var twitter = require('ntwitter');
+var credentials = require('./credentials.js');
+var tweets = [];
+
+function tweet(data) {
+	if ( typeof data === 'string' )
+		console.log(data);
+	else if ( data.text && data.user && data.user.screen_name ) {
+		tweets.push(data);//('"' + data.text + '" -- ' + data.user.screen_name);
+	}
+	else if ( data.message )
+		console.log('ERROR: ' + sys.inspect(data));
+	else
+		console.log(sys.inspect(data));
+}
+
+function stream(response, postData) {
+    var t = new twitter({
+        consumer_key: credentials.consumer_key,
+        consumer_secret: credentials.consumer_secret,
+        access_token_key: credentials.access_token_key,
+        access_token_secret: credentials.access_token_secret
+    });
+    
+    t.stream(
+        'statuses/filter',
+        { track: ['awesome', 'cool', 'rad', 'gnarly', 'groovy'] },
+        function(stream) {
+            stream.on('data', tweet);
+            setTimeout(function responsetoclient() {
+                    response.writeHead(200, {"Content-Type": "text/plain"});
+                    response.write(JSON.stringify(tweets));
+                    response.end();
+                }, 2000);
+        }
+    );
 }
 
 function main(response, postData) {
@@ -137,6 +179,7 @@ function upload(response, postData) {
 }
 
 exports.init = init;
+exports.stream = stream;
 exports.main = main;
 exports.itinerary = itinerary;
 exports.submitplace = submitplace;

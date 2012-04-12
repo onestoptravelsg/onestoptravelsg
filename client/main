@@ -14,7 +14,7 @@
             <div class="carousel-inner">
                 <div class="active item">
                     <img src="http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/carousel/00.png" width="540px" height="405px" alt="">
-                	<div class="carousel-caption">
+                    <div class="carousel-caption">
     					<h4>No account needed to create!</h4>
     					<p>To start creating your itinerary, there is no need to create an account! Simply go to the itinerary creation page, enter your destinations, and you can choose to have us email 
                         a PDF copy to you or download the itinerary directly from our site.
@@ -83,5 +83,14 @@
             <h1>See our simple tutorial...</h1>
             <p>Not sure how to get started? Watch our tutorial video for inspiration!</p>
         </div>
+    </div>
+</div>
+<div class="row">
+    <hr class="header-div">
+    <div class="span4">
+        <h2>See what people say about us!</h2>
+    </div>
+    <div class="span8 tweetstream">
+        <ul id="tweets"></ul>
     </div>
 </div>

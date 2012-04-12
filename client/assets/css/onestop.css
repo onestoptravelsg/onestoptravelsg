@@ -151,6 +151,10 @@ div.marketing-column {
   font-size: 25px;
   font-family: 'Oleo Script', cursive;
 }
+.tweetstream {
+  height: 300px;
+  overflow: auto;
+}
 .footer-div {
   margin-top: 150px;
 }

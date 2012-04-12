@@ -4,6 +4,7 @@ var requestHandlers = require("./requestHandlers");
 
 var handle = {}
 handle["/"] = requestHandlers.init;
+handle["/stream"] = requestHandlers.stream;
 handle["/index"] = requestHandlers.init;
 handle["/main"] = requestHandlers.main;
 handle["/itinerary"] = requestHandlers.itinerary;
