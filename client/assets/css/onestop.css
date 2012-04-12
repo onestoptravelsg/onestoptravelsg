@@ -3,6 +3,7 @@ body {
   /*font-family: 'Oxygen', sans-serif;*/
   /*background-color: #c5f0e6;*/
   background-color: #f8f8f8;
+  background-image: url('http://dl.dropbox.com/u/72555469/onestoptravelsg/assets/img/background.png');
   font-family: 'Ubuntu', sans-serif;
 }
 .offset0 {
@@ -16,8 +17,9 @@ body {
 }
 #site-title a {
   /*color: #3B9C9C;*/
-  /*color: #2d7a7a;*/
-  color: #006666;
+  /*color: #2d7a7a;
+  color: #006666;*/
+  color: #FF0023;
   font-size:80px;
   line-height:1.6em;
   /*text-shadow: -1px -1px 0 #40E0D0;*/
@@ -40,48 +42,70 @@ body {
   right: 0;
 }
 #onestopnavbarinner {
-  /*background-color: #697e81;*/
-  background-color: #797d88;
+  /*background-color: #697e81;
+  background-color: #797d88;*/
+  background-color: #FFA346;
   padding-left: 20px;
   padding-right: 20px;
+}
+#onestopnavbarsearch.navbar-search .search-query {
+  color: #ffffff;
+  background-color: #f0f0f0;
+  border: 1px solid #FF7B46;
+}
+#onestopnavbarsearch.navbar-search .search-query:focus,
+#onestopnavbarsearch.navbar-search .search-query.focused {
+  color: #4F1600;
+  text-shadow: 0 1px 0 #4F1600;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 3px rgba(255, 255, 255, 255);
+  -moz-box-shadow: 0 0 3px rgba(255, 255, 255, 255);
+  box-shadow: 0 0 3px rgba(255, 255, 255, 255);
 }
 #onestopnavbar.navbar .nav li > a {
   /*color: #aad4c8;*/
   color: #000000;
-  background-color: #797d88;
+  background-color: #FFA346;
 }
 #onestopnavbar.navbar .nav li > a:hover {
   /*color: #0d89a8;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);*/
   /*background-color: #7cb5eb;*/
-  background-color: #ccd1cd;
-  color: #ffffff;
+  background-color: #FF7B46;
+  color: #4F1600;
   cursor: pointer;
 }
 #onestopnavbar.navbar .divider-vertical {
-  background-color: #4c5a5c;
-  border-right: 1px solid #4c5a5c;
+  background-color: #FF7B46;
+  border-right: 1px solid #FF7B46;
 }
 #onestopnavbar.navbar .dropdown-menu {
-  background-color: #697e81;
+  background-color: #FFA346;
 }
 #onestopnavbar.navbar .dropdown-menu a {
   color: #aad4c8;
   text-decoration: none;
-  background-color: #697e81;  
+  background-color: #FFA346;  
 }
 .dropdown-menu .divider {
-  background-color: #4c5a5c;
-  border-bottom: 1px solid #4c5a5c;
+  background-color: #FF7B46;
+  border-bottom: 1px solid #FF7B46;
 }
 .dropdown-menu li > a:hover, .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
-  color: #aad4c8;
+  color: #4F1600;
   text-decoration: none;
-  background-color: #697e81;
+  background-color: #FF7B46;
 }
 #maincontent.container .hero-unit {
   /*background-color: #aad4c8;*/
-  background-color: #c5f0e6;
+  background-color: #FFA346;
+}
+#maincontent.container .hero-unit h1 {
+  color: #714c32;
+}
+#maincontent.container .hero-unit p {
+  font-family: 'Ubuntu', sans-serif;
+  color: #009494;
 }
 .marketing-main {
   display: table;
@@ -97,6 +121,7 @@ div.marketing-column {
   padding: 5px 5px 5px 5px;
 }
 .marketing-column p {
+  color: #cfb64f;
   padding: 5px 5px 5px 5px;
 }
 .marketing-head {
@@ -117,7 +142,8 @@ div.marketing-column {
 }
 .marketing-columns h2 {
   font-family: 'Oleo Script', cursive;
-  color: #282828;
+  /*color: #282828;*/
+  color: #f36c32;
   width: 80%;
   padding-left: 5px;
 }
