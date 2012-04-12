@@ -2,5 +2,6 @@
   "name": "onestoptravelsg",                                              
   "version": "0.0.1",
   "dependencies": {
+      "ntwitter": "0.3.0"
   }
 }
