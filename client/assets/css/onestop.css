@@ -41,6 +41,9 @@ body {
   top: 80px;
   right: 0;
 }
+#onestopnavbar.navbar .container {
+  width: 960px;
+}
 #onestopnavbarinner {
   /*background-color: #697e81;
   background-color: #797d88;
@@ -122,7 +125,8 @@ div.marketing-column {
   padding: 5px 5px 5px 5px;
 }
 .marketing-column p {
-  color: #cfb64f;
+  /*color: #cfb64f;*/
+  color: #FF465F;
   padding: 5px 5px 5px 5px;
 }
 .marketing-head {
@@ -176,16 +180,19 @@ div.marketing-column {
 }
 .footer h3 {
   font-family: 'Oleo Script', cursive;
-  color: #b8b8b8;
+  /*color: #b8b8b8;*/
+  color: #4F000B;
 }
 .footer p {
-  color: #d8d8d8;
+  /*color: #d8d8d8;*/
+  color: #814049;
   font-family: 'Oxygen', sans-serif;
   font-size: 14px;
 }
 .footer ul {
   list-style-type: none;
-  color: #d8d8d8;
+  /*color: #d8d8d8;*/
+  color: #814049;
 }
 
 .drag, .list
