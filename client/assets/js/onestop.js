@@ -29,7 +29,7 @@ var tweet_list;
 function starttwitterstream() {
     tweet_list = $("#tweets");
     $("<li>").html('started loading tweets...').prependTo(tweet_list);
-    load_tweets();
+    //load_tweets();
 }
 
 var tweet_list = $("#tweets");  
@@ -43,7 +43,7 @@ function load_tweets() {
     });  
 }  
 
-setTimeout(load_tweets, 1000);  
+//setTimeout(load_tweets, 1000);  
 
 function attachlogolinkbtn() {
     $("#logobtn").click(function(){
